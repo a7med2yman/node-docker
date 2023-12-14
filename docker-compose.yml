@@ -8,6 +8,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: a7med2yman/node-app
     environment:
       - PORT=3000
     depends_on:
